@@ -1,0 +1,33 @@
+.news-card {
+  .container {
+    .card-in {
+      background-color: #232222;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 25px 0 45px;
+      .card-left {
+        display: flex;
+        align-items: center;
+        img {
+          width: 152px;
+          height: 100px;
+          object-fit: cover;
+          margin-right: 83px;
+        }
+        .text {
+          color: #fff;
+          font-size: 24px;
+          font-weight: 700;
+          line-height: 28px;
+        }
+      }
+      .card-right {
+        img {
+          width: 133px;
+          height: 100px;
+        }
+      }
+    }
+  }
+}

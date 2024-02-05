@@ -1,0 +1,30 @@
+.header {
+  .container {
+    .header-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 50px 0;
+      .title {
+        color: #000;
+        font-size: 28px;
+        font-weight: 700;
+        span {
+          color: #9f0013;
+        }
+      }
+      .links {
+        display: flex;
+        gap: 8px;
+        font-size: 24px;
+        font-weight: 700;
+        a {
+          color: #000;
+        }
+        .active {
+          color: #9f0013;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,65 @@
+.inner-main {
+  .comic-inner {
+    padding: 50px 0 150px;
+    .container {
+      .inner {
+        display: flex;
+        justify-content: space-between;
+        .left {
+          display: flex;
+          .comic-img {
+            width: 293px;
+            height: 450px;
+            object-fit: cover;
+            margin-right: 50px;
+          }
+          .content {
+            display: flex;
+            flex-direction: column;
+            width: 550px;
+            .title {
+              color: #000;
+              font-size: 22px;
+              font-weight: 700;
+              line-height: 26px;
+              margin-bottom: 25px;
+            }
+            .text {
+              color: #000;
+              font-size: 18px;
+              font-weight: 400;
+              line-height: 21px;
+              margin-bottom: 25px;
+            }
+            .pages {
+              color: #000;
+              font-size: 18px;
+              font-weight: 400;
+              line-height: 21px;
+              margin-bottom: 25px;
+            }
+            .language {
+              color: #000000;
+              font-size: 18px;
+              font-weight: 400;
+              line-height: 21px;
+              margin-bottom: 25px;
+            }
+            .price {
+              color: #9f0013;
+              font-size: 24px;
+              font-weight: 700;
+              line-height: 28px;
+            }
+          }
+        }
+        .right {
+          font-size: 18px;
+          font-weight: 700;
+          line-height: 21px;
+          color: #000;
+        }
+      }
+    }
+  }
+}
