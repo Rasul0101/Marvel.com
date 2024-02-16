@@ -7,7 +7,7 @@ import Decoration from "../assets/images/Decoration.svg";
 const InfoCards = ({ forCards }) => {
   const randomIndex = Math.floor(Math.random() * forCards.length);
 
-  const selectedProduct = forCards[randomIndex];
+  const selectedItem = forCards[randomIndex];
 
   return (
     <section className="info-cards">
@@ -35,19 +35,16 @@ const InfoCards = ({ forCards }) => {
               </div>
             ))
             .slice(4, 5)} */}
-          <div key={selectedProduct?.id} className="character-card">
+          <div key={selectedItem?.id} className="character-card">
             <img
-              src={`${selectedProduct?.thumbnail?.path}.${selectedProduct?.thumbnail?.extension}`}
+              src={`${selectedItem?.thumbnail?.path}.${selectedItem?.thumbnail?.extension}`}
               alt=""
             />
             <div className="content">
-              <h3 className="title">{selectedProduct?.name}</h3>
-              <p className="text">{selectedProduct?.description}</p>
+              <h3 className="title">{selectedItem?.name}</h3>
+              <p className="text">{selectedItem?.description}</p>
               <div className="buttons">
-                <Link
-                  to={`/${selectedProduct?.id}`}
-                  className="btn btn-homepage"
-                >
+                <Link to={`/${selectedItem?.id}`} className="btn btn-homepage">
                   Homepage
                 </Link>
                 <Link to="" className="btn btn-wiki">
